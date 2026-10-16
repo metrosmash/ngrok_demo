@@ -12,7 +12,7 @@ MAX = 10
 RANDOM_SEED = 43
 
 
-def generate_random_number(min: int, max: int, random_seed: int = RANDOM_SEED, is_test: Bool = False) -> int:
+def generate_random_number(min: int, max: int, random_seed: int = RANDOM_SEED, is_test: bool = False) -> int:
     """
     Generates a random number from the range of min to max 
     """
