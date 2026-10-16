@@ -26,6 +26,6 @@ jobs:
       run: echo "Running Pytest"
     - name: run_tests
       run: |
-        pythom -m pytest -v
+        python -m pytest -v
     - name: Announce job status 
       run: echo "${{ job.status }}"
