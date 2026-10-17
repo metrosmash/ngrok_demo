@@ -51,3 +51,8 @@ class APIHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(response).encode("utf-8"))
         
 
+
+if __name__ == "__main__":
+    server = HTTPServer(("0.0.0.0", 5000), APIHandler)
+    print("API Server is UP")
+    server.serve_forever()
