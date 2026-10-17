@@ -27,5 +27,7 @@ jobs:
     - name: run_tests
       run: |
         python -m pytest -v
+    - name: Build Dockerfile
+      run: docker compose build
     - name: Announce job status 
       run: echo "${{ job.status }}"
